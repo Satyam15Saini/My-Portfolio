@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Saini - Software Development Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">SS</div>
+            <div class="preloader-progress">
+                <div class="preloader-bar"></div>
+            </div>
+            <div class="preloader-text">Loading Experience...</div>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <div class="ss-logo">
+                        <span class="ss-letter ss-letter-1">S</span>
+                        <span class="ss-letter ss-letter-2">S</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-bg" id="particles"></div>
+        <div class="hero-gradient-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-floating-cards">
+                    <div class="floating-card glass-effect" data-depth="0.1">
+                        <div class="card-icon">💻</div>
+                    </div>
+                    <div class="floating-card glass-effect" data-depth="0.2">
+                        <div class="card-icon">⚡</div>
+                    </div>
+                    <div class="floating-card glass-effect" data-depth="0.15">
+                        <div class="card-icon">🚀</div>
+                    </div>
+                </div>
+                
+                <div class="hero-image reveal-up">
+                    <div class="profile-container">
+                        <div class="profile-bg"></div>
+                        <div class="profile-placeholder">SS</div>
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-name reveal-up" data-delay="200">
+                    <span class="text-reveal">Satyam Saini</span>
+                </h1>
+                
+                <h2 class="hero-title reveal-up" data-delay="300">
+                    <span class="text-gradient">Software Development Engineer</span>
+                </h2>
+                
+                <p class="hero-tagline reveal-up" data-delay="400">
+                    <span class="typing-text" id="typing-text">My Portfolio</span>
+                    <span class="cursor-blink">|</span>
+                </p>
+                
+                <p class="hero-subtitle reveal-up" data-delay="500">
+                    Passionate about solving complex problems through innovative software architecture and best engineering practices
+                </p>
+                
+                <div class="hero-cta reveal-up" data-delay="600">
+                    <a href="#portfolio" class="btn btn-primary glass-btn">
+                        <span>Explore My Work</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-outline glass-btn">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                
+                <div class="hero-stats reveal-up" data-delay="700">
+                    <div class="stat glass-effect">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat glass-effect">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge glass-effect">About Me</span>
+                <h2 class="section-title">Building Software Excellence</h2>
+                <p class="section-subtitle">Passionate about creating scalable digital solutions</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal-up" data-delay="200">
+                    <p class="about-description"> I am Pursuing Bachelor of Technology in computer science and engineering. An Undergraduate CSE (AI ML) student at DIT
+ University, Dehradun. Passionate about computer science, with a focus on academic excellence. Strong analytical and problem
+solving skills. Actively engaged in coursework, projects, and seeking opportunities for continuous learning and growth.</p>
+                </div>
+                        
+    </section>
+
+    <!-- Portfolio Section -->
+   <section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <span class="section-badge glass-effect">My Work</span>
+            <h2 class="section-title">My Projects</h2>
+        </div>
+        
+        <div class="portfolio-filters reveal-up" data-delay="200">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="backend">AI/ML Engineering</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack Engineering</button>
+            <button class="filter-btn" data-filter="devops">DevOps Engineering</button>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card glass-effect reveal-up" data-delay="300" data-category="backend">
+                <div class="project-image" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);">
+                    <div class="project-3d-effect"></div>
+                    <div class="project-overlay">
+                        <h3>AI/ML</h3>
+                        <p>Attendance System with Face Recognition</p>
+                        <div class="project-tags">
+                            <span class="tag">🐍 Python</span>
+                            <span class="tag">🐼 Pandas</span>
+                            <span class="tag">🧊 Numpy</span>
+                        </div>
+                        <div class="project-tech-details">
+                            <p>Developed an AI-powered attendance system using facial recognition that detects faces in real time with 90%+ accuracy, registers new users with CLAHE-enhanced imaging, and prevents duplicate entries through 5-second notification cooldowns. The system tracks attendance via stable IoU-based face tracking, logs data to CSV with timestamps, and maintains optimized performance through frame skipping and multi-threading techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">AI/ML Engineering</span>
+                </div>
+            </div>
+            
+            <div class="project-card glass-effect reveal-up" data-delay="400" data-category="fullstack">
+                <div class="project-image" style="background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);">
+                    <div class="project-3d-effect"></div>
+                    <div class="project-overlay">
+                        <h3>Full Stack</h3>
+                        <p>🌦️ Weather Forecast App</p>
+                        <div class="project-tags">
+                            <span class="tag">5️⃣ HTML</span>
+                            <span class="tag">Ǝ CSS</span>
+                            <span class="tag">🇯‌🇸‌ Javascript</span>
+                            <span class="tag">🛰️ Api</span>
+                        </div>
+                        <div class="project-tech-details">
+                            <p>A responsive web app that allows users to check live weather updates and 5-day forecasts for cities worldwide. It comes with useful features such as searching by city name or using the current location, displaying live details like temperature, humidity, wind, and pressure. The app also provides a 5-day forecast enhanced for better visualization, and its mobile-friendly design ensures a smooth experience across all devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Full Stack Engineering</span>
+                </div>
+            </div>
+            
+            <div class="project-card glass-effect reveal-up" data-delay="500" data-category="devops">
+                <div class="project-image" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
+                    <div class="project-3d-effect"></div>
+                    <div class="project-overlay">
+                        <h3>DevOps</h3>
+                        <p>Issues Insights tracker</p>
+                        <div class="project-tags">
+                            <span class="tag">🐍 Python</span>
+                            <span class="tag">🐳 Docker</span>
+                            <span class="tag">⚡ FastApi</span>
+                            <span class="tag">🐘 PostgreSQL</span>
+                        </div>
+                        <div class="project-tech-details">
+                            <p>A lightweight SaaS portal designed to upload issues, track feedback, and generate insights. It addresses the need for managing issues like bug reports, feature requests, or complaints, while handling heavy background tasks such as analyzing patterns and sending notifications without blocking user requests. The system ensures scalability and reliability, overcoming the complexity of manually wiring APIs, databases, and workers. Built with FastAPI for a high-performance API, Celery with Redis for background processing, PostgreSQL for data persistence, and Docker Compose for containerized deployment, it offers a seamless, maintainable solution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">DevOps Engineering</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge glass-effect">Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Mastering the tools that power modern software engineering</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category glass-effect reveal-up" data-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-badges">
+                        <div class="skill-badge">☕ Java</div>
+                        <div class="skill-badge">🐍 Python</div>
+                        <div class="skill-badge">⚡ JavaScript</div>
+                        <div class="skill-badge">📘 TypeScript</div>
+                        <div class="skill-badge">🛢 SQL</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-effect reveal-up" data-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">🌐</div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-badges">
+                        <div class="skill-badge">⚛️ React</div>
+                        <div class="skill-badge">▲ Next.js</div>
+                        <div class="skill-badge">🎨 HTML/CSS</div>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-effect reveal-up" data-delay="400">
+                    <div class="category-header">
+                        <div class="category-icon">🔧</div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-badges">
+                        <div class="skill-badge">🟢 Node.js</div>
+                        <div class="skill-badge">🚀 Express</div>
+                        <div class="skill-badge">⚡ FastAPI</div>
+                        <div class="skill-badge">🐘 PostgreSQL</div>
+                        <div class="skill-badge">🍃 MongoDB</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category glass-effect reveal-up" data-delay="500">
+                    <div class="category-header">
+                        <div class="category-icon">🛠️</div>
+                        <h3>Tools & DevOps</h3>
+                    </div>
+                    <div class="skills-badges">
+                        <div class="skill-badge">🌿 Git</div>
+                        <div class="skill-badge">🐳 Docker</div>
+                        <div class="skill-badge">🔄 CI/CD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-badge glass-effect">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Great</h2>
+                <p class="section-subtitle">Ready to collaborate on your next project? Let's start a conversation.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal-up" data-delay="200">
+                    <div class="contact-card glass-effect">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="satyam1507s@gmail.com">satyam1507s@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card glass-effect">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <a href="tel:+15551234567">+91  </a>
+                    </div>
+                    
+                    <div class="contact-card glass-effect">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <span>Dehradun, UK</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect with me</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/Satyam15Saini" target="_blank" class="social-link glass-effect">
+                                <span class="social-icon">💻</span>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/satyam-saini-0a56411b8/" target="_blank" class="social-link glass-effect">
+                                <span class="social-icon">💼</span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://leetcode.com/u/satyam1507s/" target="_blank" class="social-link glass-effect">
+                                <span class="social-icon">🎯</span>
+                                <span>leetcode</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-effect reveal-up" data-delay="300" id="contactForm">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" class="form-input" required>
+                        <label for="name" class="form-label">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" class="form-input" required>
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                        <label for="subject" class="form-label">Subject</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary glass-btn btn-full">
+                        <span>Send Message</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="ss-logo">
+                        <span class="ss-letter ss-letter-1">S</span>
+                        <span class="ss-letter ss-letter-2">S</span>
+                    </div>
+                </div>
+                <p class="footer-text">&copy; 2025 Satyam Saini. All rights are reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
