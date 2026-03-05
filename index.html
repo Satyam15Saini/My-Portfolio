@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-content">
             <div class="preloader-logo">SS</div>
@@ -21,12 +20,10 @@
         </div>
     </div>
 
-    <!-- Progress Indicator -->
     <div class="scroll-progress">
         <div class="progress-bar"></div>
     </div>
 
-    <!-- Navigation -->
     <nav class="navbar glass-effect">
         <div class="nav-container">
             <div class="nav-logo">
@@ -52,7 +49,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="particles-bg" id="particles"></div>
         <div class="hero-gradient-bg"></div>
@@ -119,7 +115,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header reveal-up">
@@ -134,11 +129,11 @@
  University, Dehradun. Passionate about computer science, with a focus on academic excellence. Strong analytical and problem
 solving skills. Actively engaged in coursework, projects, and seeking opportunities for continuous learning and growth.</p>
                 </div>
-                        
+            </div>
+        </div>
     </section>
 
-    <!-- Portfolio Section -->
-   <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
     <div class="container">
         <div class="section-header reveal-up">
             <span class="section-badge glass-effect">My Work</span>
@@ -153,19 +148,29 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
         </div>
         
         <div class="projects-grid">
-            <div class="project-card glass-effect reveal-up" data-delay="300" data-category="backend">
+            <div class="project-card glass-effect reveal-up" data-delay="300" data-category="backend" data-url="https://github.com/Satyam15Saini/Attendance-System-with-Face-Recognition-">
                 <div class="project-image" style="background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);">
                     <div class="project-3d-effect"></div>
                     <div class="project-overlay">
                         <h3>AI/ML</h3>
                         <p>Attendance System with Face Recognition</p>
                         <div class="project-tags">
-                            <span class="tag">🐍 Python</span>
-                            <span class="tag">🐼 Pandas</span>
-                            <span class="tag">🧊 Numpy</span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="20" height="20" alt="Python"> Python
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" width="20" height="20" alt="Pandas"> Pandas
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" width="20" height="20" alt="Numpy"> Numpy
+                            </span>
                         </div>
                         <div class="project-tech-details">
                             <p>Developed an AI-powered attendance system using facial recognition that detects faces in real time with 90%+ accuracy, registers new users with CLAHE-enhanced imaging, and prevents duplicate entries through 5-second notification cooldowns. The system tracks attendance via stable IoU-based face tracking, logs data to CSV with timestamps, and maintains optimized performance through frame skipping and multi-threading techniques.</p>
+                        </div>
+                        <div class="project-link-indicator">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </div>
                     </div>
                 </div>
@@ -174,20 +179,32 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                 </div>
             </div>
             
-            <div class="project-card glass-effect reveal-up" data-delay="400" data-category="fullstack">
+            <div class="project-card glass-effect reveal-up" data-delay="400" data-category="fullstack" data-url="https://satyam15saini.github.io/Weather-Forecast/">
                 <div class="project-image" style="background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);">
                     <div class="project-3d-effect"></div>
                     <div class="project-overlay">
                         <h3>Full Stack</h3>
                         <p>🌦️ Weather Forecast App</p>
                         <div class="project-tags">
-                            <span class="tag">🧱 HTML</span>
-                            <span class="tag">🎨 CSS</span>
-                            <span class="tag">📜‌ Javascript</span>
-                            <span class="tag">🛰️ Api</span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="20" height="20" alt="HTML"> HTML
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="20" height="20" alt="CSS"> CSS
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="20" height="20" alt="JavaScript"> Javascript
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                🛰️ API
+                            </span>
                         </div>
                         <div class="project-tech-details">
                             <p>A responsive web app that allows users to check live weather updates and 5-day forecasts for cities worldwide. It comes with useful features such as searching by city name or using the current location, displaying live details like temperature, humidity, wind, and pressure. The app also provides a 5-day forecast enhanced for better visualization, and its mobile-friendly design ensures a smooth experience across all devices.</p>
+                        </div>
+                        <div class="project-link-indicator">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </div>
                     </div>
                 </div>
@@ -196,23 +213,41 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                 </div>
             </div>
 
-            <div class="project-card glass-effect reveal-up" data-delay="400" data-category="fullstack">
+            <div class="project-card glass-effect reveal-up" data-delay="400" data-category="fullstack" data-url="https://cryptocurrency-matching-engine.vercel.app/">
                 <div class="project-image" style="background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);">
                     <div class="project-3d-effect"></div>
                     <div class="project-overlay">
                         <h3>Full Stack</h3>
                         <p>CryptoMatch Engine</p>
                         <div class="project-tags">
-                            <span class="tag">🧱 HTML</span>
-                            <span class="tag">🎨 CSS</span>
-                            <span class="tag">📜Javascript</span>
-                            <span class="tag">🐍 Python</span>
-                            <span class="tag">⚡ FastApi</span>
-                            <span class="tag">🛢️ MongoDB Atlas</span>
-                            <span class="tag">⚛️ React</span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="20" height="20" alt="HTML"> HTML
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="20" height="20" alt="CSS"> CSS
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="20" height="20" alt="JavaScript"> Javascript
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="20" height="20" alt="Python"> Python
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="20" height="20" alt="FastAPI"> FastAPI
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="20" height="20" alt="MongoDB"> MongoDB
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="20" height="20" alt="React"> React
+                            </span>
                         </div>
                         <div class="project-tech-details">
                             <p>High-performance cryptocurrency matching engine with REG NMS-inspired order matching and real-time WebSocket streaming.</p>
+                        </div>
+                        <div class="project-link-indicator">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </div>
                     </div>
                 </div>
@@ -221,20 +256,32 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                 </div>
             </div>
             
-            <div class="project-card glass-effect reveal-up" data-delay="500" data-category="devops">
+            <div class="project-card glass-effect reveal-up" data-delay="500" data-category="devops" data-url="https://github.com/Satyam15Saini/issues-insights-tracker">
                 <div class="project-image" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
                     <div class="project-3d-effect"></div>
                     <div class="project-overlay">
                         <h3>DevOps</h3>
                         <p>Issues Insights tracker</p>
                         <div class="project-tags">
-                            <span class="tag">🐍 Python</span>
-                            <span class="tag">🐳 Docker</span>
-                            <span class="tag">⚡ FastApi</span>
-                            <span class="tag">🐘 PostgreSQL</span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="20" height="20" alt="Python"> Python
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="20" height="20" alt="Docker"> Docker
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="20" height="20" alt="FastAPI"> FastAPI
+                            </span>
+                            <span class="tag" style="display: flex; align-items: center; gap: 6px;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="20" height="20" alt="PostgreSQL"> PostgreSQL
+                            </span>
                         </div>
                         <div class="project-tech-details">
                             <p>A lightweight SaaS portal designed to upload issues, track feedback, and generate insights. It addresses the need for managing issues like bug reports, feature requests, or complaints, while handling heavy background tasks such as analyzing patterns and sending notifications without blocking user requests. The system ensures scalability and reliability, overcoming the complexity of manually wiring APIs, databases, and workers. Built with FastAPI for a high-performance API, Celery with Redis for background processing, PostgreSQL for data persistence, and Docker Compose for containerized deployment, it offers a seamless, maintainable solution.</p>
+                        </div>
+                        <div class="project-link-indicator">
+                            <span>View Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                         </div>
                     </div>
                 </div>
@@ -247,7 +294,6 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
     </div>
 </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header reveal-up">
@@ -263,11 +309,21 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                         <h3>Programming Languages</h3>
                     </div>
                     <div class="skills-badges">
-                        <div class="skill-badge">☕ Java</div>
-                        <div class="skill-badge">🐍 Python</div>
-                        <div class="skill-badge">⚡ JavaScript</div>
-                        <div class="skill-badge">📘 TypeScript</div>
-                        <div class="skill-badge">🛢 SQL</div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="24" height="24" alt="Java"> Java
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="24" height="24" alt="Python"> Python
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="24" height="24" alt="JavaScript"> JavaScript
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="24" height="24" alt="TypeScript"> TypeScript
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="24" height="24" alt="SQL"> SQL
+                        </div>
                     </div>
                 </div>
                 
@@ -277,10 +333,16 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                         <h3>Frontend Development</h3>
                     </div>
                     <div class="skills-badges">
-                        <div class="skill-badge">⚛️ React</div>
-                        <div class="skill-badge">▲ Next.js</div>
-                        <div class="skill-badge">🎨 HTML/CSS</div>
-                        
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="24" height="24" alt="React"> React
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" width="24" height="24" style="background: white; border-radius: 50%;" alt="Next.js"> Next.js
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="24" height="24" alt="HTML">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="24" height="24" alt="CSS"> HTML/CSS
+                        </div>
                     </div>
                 </div>
                 
@@ -290,11 +352,21 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                         <h3>Backend Development</h3>
                     </div>
                     <div class="skills-badges">
-                        <div class="skill-badge">🟢 Node.js</div>
-                        <div class="skill-badge">🚀 Express</div>
-                        <div class="skill-badge">⚡ FastAPI</div>
-                        <div class="skill-badge">🐘 PostgreSQL</div>
-                        <div class="skill-badge">🍃 MongoDB</div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="24" height="24" alt="Node.js"> Node.js
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="24" height="24" style="background: white; border-radius: 2px; padding: 2px;" alt="Express"> Express
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="24" height="24" alt="FastAPI"> FastAPI
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="24" height="24" alt="PostgreSQL"> PostgreSQL
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="24" height="24" alt="MongoDB"> MongoDB
+                        </div>
                     </div>
                 </div>
                 
@@ -304,16 +376,21 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                         <h3>Tools & DevOps</h3>
                     </div>
                     <div class="skills-badges">
-                        <div class="skill-badge">🌿 Git</div>
-                        <div class="skill-badge">🐳 Docker</div>
-                        <div class="skill-badge">🔄 CI/CD</div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="24" height="24" alt="Git"> Git
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="24" height="24" alt="Docker"> Docker
+                        </div>
+                        <div class="skill-badge" style="gap: 8px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #0d9488;"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg> CI/CD
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header reveal-up">
@@ -327,13 +404,13 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                     <div class="contact-card glass-effect">
                         <div class="contact-icon">📧</div>
                         <h3>Email</h3>
-                        <a href="satyam1507s@gmail.com">satyam1507s@gmail.com</a>
+                        <a href="mailto:satyam1507s@gmail.com">satyam1507s@gmail.com</a>
                     </div>
                     
                     <div class="contact-card glass-effect">
                         <div class="contact-icon">📱</div>
                         <h3>Phone</h3>
-                        <a href="tel:+15551234567">+91  </a>
+                        <a href="tel:+91">+91  </a>
                     </div>
                     
                     <div class="contact-card glass-effect">
@@ -346,16 +423,24 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
                         <h3>Connect with me</h3>
                         <div class="social-grid">
                             <a href="https://github.com/Satyam15Saini" target="_blank" class="social-link glass-effect">
-                                <span class="social-icon">💻</span>
+                                <span class="social-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="28" height="28" alt="GitHub" style="filter: invert(1);">
+                                </span>
                                 <span>GitHub</span>
                             </a>
                             <a href="https://www.linkedin.com/in/satyam-saini-0a56411b8/" target="_blank" class="social-link glass-effect">
-                                <span class="social-icon">💼</span>
+                                <span class="social-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" width="28" height="28" alt="LinkedIn">
+                                </span>
                                 <span>LinkedIn</span>
                             </a>
                             <a href="https://leetcode.com/u/satyam1507s/" target="_blank" class="social-link glass-effect">
-                                <span class="social-icon">🎯</span>
-                                <span>leetcode</span>
+                                <span class="social-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#ffa116">
+                                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.541l5.967 5.68c.813.815 2.124.815 2.937 0l1.463-1.463c.813-.814.813-2.123 0-2.937l-6.689-6.366c-.366-.366-.366-.957 0-1.323l7.08-7.58a1.373 1.373 0 0 0 0-1.942l-1.463-1.463A1.374 1.374 0 0 0 13.483 0zm4.28 15.698a1.374 1.374 0 0 0-.961.438l-1.463 1.463a1.374 1.374 0 0 0 0 1.942l1.463 1.463c.813.814 2.124.814 2.937 0l1.463-1.463a1.374 1.374 0 0 0 0-1.942l-1.463-1.463a1.374 1.374 0 0 0-.961-.438z"/>
+                                    </svg>
+                                </span>
+                                <span>LeetCode</span>
                             </a>
                         </div>
                     </div>
@@ -391,7 +476,6 @@ solving skills. Actively engaged in coursework, projects, and seeking opportunit
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer glass-effect">
         <div class="container">
             <div class="footer-content">

@@ -246,7 +246,7 @@ class PortfolioWebsite {
         });
     }
 
-    // Portfolio Filtering System
+    // Portfolio Filtering System & Click Handlers
     setupPortfolioFilters() {
         const filterButtons = document.querySelectorAll('.filter-btn');
         const projectCards = document.querySelectorAll('.project-card');
@@ -277,10 +277,13 @@ class PortfolioWebsite {
             });
         });
 
-        // Project card interactions
+        // Project card interactions - Open Link
         projectCards.forEach(card => {
             card.addEventListener('click', () => {
-                console.log('Project card clicked:', card.querySelector('h3')?.textContent || 'Unknown project');
+                const targetUrl = card.dataset.url;
+                if(targetUrl && targetUrl !== '#') {
+                    window.open(targetUrl, '_blank');
+                }
             });
         });
     }
@@ -290,6 +293,8 @@ class PortfolioWebsite {
         const testimonials = document.querySelectorAll('.testimonial');
         const dots = document.querySelectorAll('.testimonial-dots .dot');
         let currentSlide = 0;
+
+        if(testimonials.length === 0) return;
 
         const showSlide = (index) => {
             testimonials.forEach((testimonial, i) => {
@@ -728,23 +733,6 @@ if ('ontouchstart' in window) {
         }
     `;
     document.head.appendChild(style);
-}
-
-// Intersection Observer for lazy loading if needed
-const lazyImages = document.querySelectorAll('[data-src]');
-if (lazyImages.length > 0) {
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    lazyImages.forEach(img => imageObserver.observe(img));
 }
 
 // Enhanced Easter egg with new colors - Konami code
