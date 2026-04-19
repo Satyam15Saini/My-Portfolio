@@ -1,27 +1,32 @@
-/* Custom Properties for New Color Scheme */
+/* Custom Properties for Premium Dark Palette */
 :root {
-  /* New Color Palette - Teal/Orange/Purple with Dark Navy */
-  --color-primary: #0d9488;
-  --color-primary-light: #0f766e;
-  --color-primary-dark: #134e4a;
-  --color-primary-rgb: 13, 148, 136;
+  /* Premium Dark Space Palette - Cyan/Violet/Deep Navy */
+  --color-primary: #06b6d4;     /* Cyan */
+  --color-primary-light: #22d3ee;
+  --color-primary-dark: #0891b2;
+  --color-primary-rgb: 6, 182, 212;
   
-  --color-secondary: #ea580c;
-  --color-secondary-light: #dc2626;
-  --color-secondary-dark: #c2410c;
-  --color-secondary-rgb: 234, 88, 12;
+  --color-secondary: #8b5cf6;   /* Violet */
+  --color-secondary-light: #a78bfa;
+  --color-secondary-dark: #7c3aed;
+  --color-secondary-rgb: 139, 92, 246;
   
-  --color-accent: #7c3aed;
-  --color-accent-light: #6d28d9;
-  --color-accent-dark: #5b21b6;
-  --color-accent-rgb: 124, 58, 237;
+  --color-accent: #f43f5e;      /* Rose */
+  --color-accent-light: #fb7185;
+  --color-accent-dark: #e11d48;
+  --color-accent-rgb: 244, 63, 94;
   
-  --color-background: #0a0f1c;
+  --color-background: #0B1120;  /* Deep Navy/Space */
   --color-surface: #1e293b;
   --color-surface-light: #334155;
+  
   --color-text: #ffffff;
-  --color-text-secondary: #f8fafc;
-  --color-text-muted: #e2e8f0;
+  --color-text-secondary: #f1f5f9;  /* Brighter secondary text */
+  --color-text-muted: #cbd5e1;      /* Brighter muted text */
+  
+  /* Fonts */
+  --font-family-base: 'Inter', sans-serif;
+  --font-family-heading: 'Outfit', sans-serif;
   
   /* Enhanced gradients with new colors */
   --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
@@ -31,11 +36,11 @@
   --gradient-warm: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent-light) 100%);
   --gradient-cool: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   
-  /* Glassmorphism properties with new colors */
-  --glass-bg: rgba(13, 148, 136, 0.05);
-  --glass-border: rgba(248, 250, 252, 0.1);
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --glass-blur: blur(20px);
+  /* Refined Glassmorphism properties */
+  --glass-bg: rgba(30, 41, 59, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.4);
+  --glass-blur: blur(16px);
   
   /* Enhanced shadows */
   --shadow-glow: 0 0 30px rgba(var(--color-primary-rgb), 0.3);
@@ -67,6 +72,11 @@ body {
   background: var(--color-background);
   font-family: var(--font-family-base);
   color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .section-title, .hero-name, .ss-letter {
+  font-family: var(--font-family-heading);
 }
 
 /* SS Logo Design */
@@ -228,20 +238,18 @@ body {
   padding: 1.2rem 0;
   transition: all 0.4s var(--ease-smooth);
   
-  /* Light theme-colored glass base */
-  background: rgba(13, 148, 136, 0.15); 
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(13, 148, 136, 0.4); 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+  /* Modern Dark Glass */
+  background: rgba(11, 17, 32, 0.5); 
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
 .navbar.scrolled {
   padding: 0.8rem 0;
-  /* Solid, bright theme color when scrolled */
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.95), rgba(15, 118, 110, 0.98)); 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  background: rgba(11, 17, 32, 0.85); 
+  border-bottom: 1px solid rgba(6, 182, 212, 0.2); 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -442,7 +450,7 @@ body {
   position: relative;
   z-index: 2;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  border: 1px solid rgba(13, 148, 136, 0.3);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.3);
 }
 
 .profile-ring {
@@ -451,7 +459,7 @@ body {
   left: -10px;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
-  border: 2px solid rgba(13, 148, 136, 0.5);
+  border: 2px solid rgba(var(--color-primary-rgb), 0.5);
   border-radius: 50%;
   border-top-color: transparent;
   animation: rotate 8s linear infinite;
@@ -539,12 +547,12 @@ body {
 .btn-primary {
   background: var(--gradient-primary);
   color: white;
-  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
+  box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
+  box-shadow: 0 6px 20px rgba(var(--color-primary-rgb), 0.4);
 }
 
 .btn-outline {
@@ -554,7 +562,7 @@ body {
 }
 
 .btn-outline:hover {
-  background: rgba(13, 148, 136, 0.15);
+  background: rgba(var(--color-primary-rgb), 0.15);
   color: white;
 }
 
@@ -758,13 +766,13 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10, 15, 28, 1) 0%, rgba(10, 15, 28, 0.6) 40%, rgba(10, 15, 28, 0.1) 100%);
+  background: linear-gradient(to top, rgba(11, 17, 32, 1) 0%, rgba(11, 17, 32, 0.7) 40%, rgba(11, 17, 32, 0.2) 100%);
   z-index: 1;
   transition: all 0.5s ease;
 }
 
 .project-card:hover .project-image::before {
-  background: rgba(10, 15, 28, 0.94);
+  background: rgba(11, 17, 32, 0.96);
   backdrop-filter: blur(8px);
 }
 
@@ -809,11 +817,21 @@ section {
   font-size: 1.25rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 0; 
+  margin-bottom: 1rem; 
   transition: all 0.4s ease;
 }
 
-.project-tags,
+.project-tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  opacity: 1;
+  max-height: 100px;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
 .project-tech-details,
 .project-link-indicator {
   opacity: 0;
@@ -825,7 +843,7 @@ section {
 }
 
 .project-card:hover .project-overlay {
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .project-card:hover .project-overlay h3 {
@@ -834,11 +852,14 @@ section {
 }
 
 .project-card:hover .project-overlay > p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   color: var(--color-text-muted);
 }
 
-.project-card:hover .project-tags,
+.project-card:hover .project-tags {
+  margin-bottom: 1.5rem;
+}
+
 .project-card:hover .project-tech-details,
 .project-card:hover .project-link-indicator {
   opacity: 1;
@@ -846,16 +867,12 @@ section {
   transform: translateY(0);
 }
 
-.project-card:hover .project-tags {
-  margin-bottom: 1.5rem;
-}
-
 .project-card:hover .project-tech-details {
   margin-bottom: 1.5rem;
 }
 
 .project-card:hover .project-link-indicator {
-  margin-top: auto;
+  margin-top: 1rem;
 }
 
 .project-tags {
@@ -909,7 +926,7 @@ section {
 
 .project-info {
   padding: 1.4rem 1.8rem;
-  background: rgba(10, 15, 28, 0.95);
+  background: rgba(11, 17, 32, 0.95);
   border-top: 1px solid rgba(255,255,255,0.05);
   position: relative;
   z-index: 3;
@@ -944,7 +961,7 @@ section {
 
 .skill-category:hover {
   transform: translateY(-5px);
-  border-color: rgba(13, 148, 136, 0.3);
+  border-color: rgba(var(--color-primary-rgb), 0.3);
   background: rgba(255,255,255,0.03);
 }
 
@@ -988,7 +1005,7 @@ section {
 
 .skill-badge:hover {
   transform: translateY(-2px);
-  background: rgba(13, 148, 136, 0.15);
+  background: rgba(var(--color-primary-rgb), 0.15);
   border-color: var(--color-primary);
   color: white;
 }
@@ -1023,7 +1040,7 @@ section {
 
 .contact-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(13, 148, 136, 0.3);
+  border-color: rgba(var(--color-primary-rgb), 0.3);
 }
 
 .contact-icon {
@@ -1079,7 +1096,7 @@ section {
   color: white;
   transform: translateY(-2px);
   border-color: var(--color-primary);
-  background: rgba(13, 148, 136, 0.1);
+  background: rgba(var(--color-primary-rgb), 0.1);
 }
 
 .social-icon {
@@ -1250,7 +1267,7 @@ section {
     width: 100%;
     height: calc(100vh - 70px);
     /* Mobile menu matching the light theme color */
-    background: rgba(13, 148, 136, 0.98); 
+    background: rgba(11, 17, 32, 0.98); 
     backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: flex-start;

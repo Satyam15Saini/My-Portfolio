@@ -147,9 +147,9 @@ class PortfolioWebsite {
         let particles = [];
         const numParticles = 50;
         const colors = [
-            'rgba(13, 148, 136, 0.6)',    // Primary teal
-            'rgba(234, 88, 12, 0.6)',     // Secondary orange
-            'rgba(124, 58, 237, 0.6)',    // Accent purple
+            'rgba(6, 182, 212, 0.6)',     /* Cyan */
+            'rgba(139, 92, 246, 0.6)',    /* Violet */
+            'rgba(244, 63, 94, 0.6)',     /* Rose */
         ];
 
         const resizeCanvas = () => {
@@ -199,7 +199,7 @@ class PortfolioWebsite {
                         ctx.beginPath();
                         ctx.moveTo(particle.x, particle.y);
                         ctx.lineTo(other.x, other.y);
-                        ctx.strokeStyle = `rgba(13, 148, 136, ${0.15 - distance / 1000})`;
+                        ctx.strokeStyle = `rgba(6, 182, 212, ${0.15 - distance / 1000})`;
                         ctx.stroke();
                     }
                 });
@@ -477,8 +477,8 @@ class PortfolioWebsite {
             font-size: 0.9rem;
             animation: slideDown 0.3s ease-out;
             ${type === 'error' ? 
-                'background: rgba(234, 88, 12, 0.2); color: #fed7aa; border: 1px solid rgba(234, 88, 12, 0.3);' : 
-                'background: rgba(13, 148, 136, 0.2); color: #5eead4; border: 1px solid rgba(13, 148, 136, 0.3);'
+                'background: rgba(244, 63, 94, 0.2); color: #fecdd3; border: 1px solid rgba(244, 63, 94, 0.3);' : 
+                'background: rgba(6, 182, 212, 0.2); color: #cffafe; border: 1px solid rgba(6, 182, 212, 0.3);'
             }
         `;
         
@@ -768,7 +768,7 @@ document.addEventListener('keydown', (e) => {
                 position: absolute;
                 width: 10px;
                 height: 10px;
-                background: linear-gradient(45deg, #0d9488, #ea580c, #7c3aed);
+                background: linear-gradient(45deg, #06b6d4, #8b5cf6, #f43f5e);
                 border-radius: 50%;
                 top: ${Math.random() * 100}%;
                 left: ${Math.random() * 100}%;
