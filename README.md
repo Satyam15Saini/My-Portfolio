@@ -12,8 +12,6 @@ Welcome to the repository for my personal portfolio website! This project is des
 * **Interactive Animations:** Features a custom preloader, floating 3D elements, dynamic typing animations, and scroll-triggered reveals using Intersection Observer.
 * **Dynamic Background:** A custom interactive particle background built with HTML5 Canvas.
 * **Project Filtering:** Built-in JavaScript filtering system to sort projects by category (AI/ML, Full Stack, DevOps).
-* **Fully Responsive:** Optimized for a seamless experience across desktop, tablet, and mobile devices.
-* **Easter Egg:** Try typing the Konami Code (`↑` `↑` `↓` `↓` `←` `→` `←` `→` `B` `A`) on the live site! 🎮
 
 ---
 
