@@ -1486,15 +1486,15 @@ section {
 }
 
 .tech-icon {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
 }
 
 .provider-logo {
-  height: 18px;
+  height: 14px;
   object-fit: contain;
-  opacity: 0.9;
-  filter: grayscale(20%) brightness(1.2);
+  opacity: 0.8;
+  filter: grayscale(30%) brightness(1.2);
 }
 
 .bg-white {
