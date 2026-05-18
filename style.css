@@ -1486,12 +1486,12 @@ section {
 }
 
 .tech-icon {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
 }
 
 .provider-logo {
-  height: 24px;
+  height: 18px;
   object-fit: contain;
   opacity: 0.9;
   filter: grayscale(20%) brightness(1.2);
